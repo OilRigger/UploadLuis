@@ -2,7 +2,7 @@ const Personajes = [
     {
         nombre: "David Choak",
         tipo: "vivo",
-        residencia: "Colombia",
+        residencia: "Galachos de Juslibol",
         fechaDescarga: "",
         culpabilidad: "delincuente",
         imagen: "https://www.postavy.cz/foto/david-choak-foto.jpg",
