@@ -1,0 +1,107 @@
+body {
+    background-color: #e5eaf5;
+    color: rgb(194, 187, 187);
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: grey;
+    background-color: black;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+  /* Divs */
+
+  .divPrincipal {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    position:relative;
+    border: 0;
+  }
+  
+  .divContenido {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 18%;
+    max-width: 68%;
+    margin-top: 2%;
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    overflow: auto;
+  }
+
+
+  .divIzquierda {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    position:fixed;
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 12%;
+    border-radius: 5px;
+    
+  }
+
+  .sujeto {
+    border: 3px solid ;
+    width: 20%;
+    text-align: center; 
+    margin-left: 35px;
+    margin-top: 30px;
+    float: left;
+    cursor: pointer;
+  }
+
+  .sujeto img {
+    width: 200px; 
+    height: 180px; 
+    max-width: 100%;
+    margin-top: 5px;
+  }
+
+
+button {
+    display: block;
+    margin-top: 10px;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+  
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
