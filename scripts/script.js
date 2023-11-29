@@ -123,7 +123,7 @@ function editarSujeto(index) {
   var labelDescargado = document.createElement("label");
   labelDescargado.textContent = "Desde cuando fue descargado:";
   var inputDescargado = document.createElement("input");
-  inputDescargado.type = "text";
+  inputDescargado.type = "date";
   inputDescargado.name = "descargado";
   inputDescargado.disabled = true;
   inputDescargado.required = false;
@@ -291,7 +291,7 @@ function nuevoRegistro() {
   var labelDescargado = document.createElement("label");
   labelDescargado.textContent = "Desde cuando fue descargado:";
   var inputDescargado = document.createElement("input");
-  inputDescargado.type = "text";
+  inputDescargado.type = "date";
   inputDescargado.name = "descargado";
   inputDescargado.disabled = true;
   inputDescargado.required = false;
