@@ -429,9 +429,9 @@ function isValidUrl(url) {
     div.innerHTML = "";
   }
   
-
-  function modoEmergencia() {
+function modoEmergencia() {
     // Este metodo esta hecho para que ocupe toda la pantalla con una imagen a modo de salvapantallas
+    
     if (document.documentElement.requestFullscreen) {
 
       document.documentElement.requestFullscreen();
@@ -442,9 +442,7 @@ function isValidUrl(url) {
     } else if (document.documentElement.msRequestFullscreen) { // Internet Explorer
       document.documentElement.msRequestFullscreen();
     }
-  
-    // Guardar el estado actual de la página y luego borra el html 
-    var estadoAnteriorHTML = document.documentElement.innerHTML;
+
   
     document.body.innerHTML = '';
   
@@ -458,7 +456,7 @@ function isValidUrl(url) {
     document.body.appendChild(salvapantallasImg);
 
     var botonRestaurar = document.createElement('button');
-    botonRestaurar.innerText = 'Restaurar';
+    botonRestaurar.innerText = 'Volver';
     botonRestaurar.style.position = 'fixed';
     botonRestaurar.style.bottom = '10px';
     botonRestaurar.style.left = '10px';
@@ -468,9 +466,9 @@ function isValidUrl(url) {
     botonRestaurar.style.outline = 'none';
     botonRestaurar.style.cursor = 'pointer';
   
-    // Agrega el evento de clic al botón para restaurar el estado anterior
+  
     botonRestaurar.addEventListener('click', function() {
-      document.documentElement.innerHTML = estadoAnteriorHTML;
+     location.reload();
       // Salir del modo de pantalla completa
       if (document.exitFullscreen) {
         document.exitFullscreen();
